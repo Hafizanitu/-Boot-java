@@ -1,0 +1,73 @@
+class stringFunction{
+    private String s1 = "Nitu";
+    private String s2 = "Nipu";
+    // concatenation
+     public void concat(){
+         System.out.println(s1.concat(s2));
+     }
+     // find length
+     public void lengthing(){
+         System.out.println(s1.length());
+     }
+     //reverse
+     public void reversing(){
+         StringBuilder s3 = new StringBuilder();
+         System.out.println( s3.reverse());
+     }
+     //replace
+     public void replacing(){
+        System.out.println(s1.replace("Nipu", "Nipu"));
+     }
+     //trimming
+     public void trimming(){
+         System.out.println(s1.trim());
+     }
+     //substring
+     public void substring(){
+         String s4 = "nothing is possible";
+         System.out.println("the part of string : " + s4.substring(0,4));
+         System.out.println("prefix of string : " + s4.substring(0,4));
+         System.out.println("suffix of string : " + s4.substring(0,s4.length()-1));
+     }
+ }
+ public class Main {
+    public static void main(String[] args) {
+        stringFunction s1 = new stringFunction();
+        s1.concat();
+        s1.lengthing();
+        s1.reversing();
+        s1.replacing();
+        s1.trimming();
+        s1.substring();
+    }
+ }
+
+
+
+
+public class Main {
+    double radius =3;
+// class & object
+    public static void main(String[] args) {
+        Main myObj = new Main();
+        System.out.println(myObj.radius);
+    }
+    // constructor
+    Main(){
+    }
+     Main(double newRadius){
+         radius=newRadius;
+        }
+        //method
+        double getArea(){
+         return radius * radius *Math.PI;
+        }
+        double getPerimeter(){
+        return 2 * radius * Math.PI;
+    }
+    double setRadius(double newRadius){
+        return radius=newRadius;
+    }
+}
+
+
